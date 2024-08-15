@@ -80,7 +80,7 @@ The system is structured around specific roles and modules that define the funct
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/AnDev2804/hospital-management-system.git
+   git clone https://github.com/AnDev2804/phpwebsite2.git
    ```
 
 2. **Configure the database**:
