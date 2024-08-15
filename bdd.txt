@@ -1,0 +1,63 @@
+Paciente:
+ID
+Apellido 1
+Apellido 2
+Nombre 1
+Nombre 2
+Fecha de Nacimiento
+Direccion
+Telefono
+Correo electronico
+Clave
+Sexo
+
+Perfil de Paciente:
+ID
+Tipo de Sangre
+Factor de Sangre
+Factor Alergico
+Factor Congenito
+Factor Motriz
+Estatura
+Peso
+
+Cita:
+ID del Paciente
+Fecha de cita
+Codigo de especialidad medica a la que asistira
+Codigo del especialista
+Observacion general de la visita medica
+diagnostico establecido por el especialista
+tratamiento establecido por el especialista
+sugiere nueva cita (booleano, si o no)
+costo de cita
+
+Empleado (Doctor/a, Enfermero/a, Administrador/a):
+ID
+Apellido 1
+Apellido 2
+Nombre 1
+Nombre 2
+Correo electronico
+Clave
+codigo de la especialidad
+fecha de inicio del contrato
+fecha final del contrato
+dias que esta activo en la clinica
+numero de referencia del titulo
+sexo
+
+Especialidad:
+Codigo de la especialidad
+Descripcion de la especialidad
+
+Administrador:
+ID
+Apellido 1
+Apellido 2
+Nombre 1
+Nombre 2
+Correo electronico
+Clave
+sexo
+

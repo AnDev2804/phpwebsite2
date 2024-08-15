@@ -1,0 +1,116 @@
+.img1
+{
+    margin-left: 15px;
+    display: inline-flex;
+    width: 100px;
+    height: 100px;
+}
+.pro
+{
+    display: inline-flex;
+    font-family: 'Courier New', Courier, monospace;
+}
+.slg
+{
+    font-weight: bold;
+    margin-left: 9%;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+.menu
+{
+    display: inline-flex;
+    position: relative;
+    left: 25%;
+}
+.menu li
+{
+    display: inline-flex;
+    list-style-type: none;
+    
+}
+.menu a
+{
+    text-decoration: none;
+}
+.backg
+{
+    background-image: url("/TAREA\ NAVIDEÑA/fondo1.jpeg");
+    padding-top: 3%;
+    height: 520px;
+}
+#formulario
+{
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.formulario__input-error
+{
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+}
+
+.formulario__input-error-activo
+{
+    display: block;
+}
+
+.formulario__select-error
+{
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+}
+
+.formulario__select-error-activo
+{
+    display: block;
+}
+
+.formulario__grupo-correcto .formulario__input
+{
+    border: 3px solid #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-correcto .formulario__select
+{
+    border: 3px solid #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label
+{
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado
+{
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario
+
+.formulario__grupo-correcto .formulario__validacion-estado
+{
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input
+{
+	border: 3px solid #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__select
+{
+	border: 3px solid #bb2929;
+}
+.pie
+{
+    padding: 0px;
+    margin: 0px;
+}

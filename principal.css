@@ -1,0 +1,56 @@
+.img1
+{
+    margin-left: 15px;
+    display: inline-flex;
+    width: 100px;
+    height: 100px;
+}
+.pro
+{
+    display: inline-flex;
+    font-family: 'Courier New', Courier, monospace;
+}
+.slg
+{
+    font-weight: bold;
+    margin-left: 9%;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+.menu
+{
+    display: inline-flex;
+    position: relative;
+    left: 40%;
+}
+.menu li
+{
+    display: inline-flex;
+    list-style-type: none;
+    
+}
+.menu a
+{
+    text-decoration: none;
+}
+.backg1
+{
+    background-image: url("/TAREA\ NAVIDEÑA/fondo13.jpg");
+    padding-top: 5%;
+    height: 520px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.backg2
+{
+    background-image: url("/TAREA\ NAVIDEÑA/fondo9.jpg");
+    padding-top: 5%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pie
+{
+    padding: 0px;
+    margin: 0px;
+}

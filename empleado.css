@@ -1,0 +1,104 @@
+.img1
+{
+    margin-left: 15px;
+    display: inline-flex;
+    width: 100px;
+    height: 100px;
+}
+.pro
+{
+    display: inline-flex;
+    font-family: 'Courier New', Courier, monospace;
+}
+.slg
+{
+    font-weight: bold;
+    margin-left: 9%;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+.menu
+{
+    display: inline-flex;
+    position: relative;
+    left: 25%;
+}
+.menu li
+{
+    display: inline-flex;
+    list-style-type: none;
+    
+}
+.menu a
+{
+    text-decoration: none;
+}
+.menu3
+{
+    display: inline-flex;
+    position: relative;
+    left: 50%;
+}
+.menu3 li
+{
+    display: inline-flex;
+    list-style-type: none;
+    
+}
+.menu3 a
+{
+    text-decoration: none;
+}
+.backgerr
+{
+    background-image: url("/TAREA\ NAVIDEÑA/fondo6.jpg");
+    padding-top: 5%;
+    height: 520px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.backg1
+{
+    background-image: url("/TAREA\ NAVIDEÑA/fondo7.jpg");
+    padding-top: 2%;
+    height: 1650px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.backg2
+{
+    background-image: url("/TAREA\ NAVIDEÑA/fondo4.jpg");
+    padding-top: 2%;
+    height: 1200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.backg3
+{
+    background-image: url("/TAREA\ NAVIDEÑA/fondo10.jpg");
+    padding-top: 2%;
+    height: 1000px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.backg4
+{
+    background-image: url("/TAREA\ NAVIDEÑA/fondo11.jpg");
+    padding-top: 2%;
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.backg5
+{
+    background-image: url("/TAREA\ NAVIDEÑA/fondo12.jpg");
+    padding-top: 2%;
+    height: 1300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pie
+{
+    padding: 0px;
+    margin: 0px;
+}
