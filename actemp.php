@@ -27,7 +27,7 @@
     $ntel=$_POST['ntel'];
     //var_dump($empci,$empcorreo,$emppass,$empAp1,$empAp2,$empNo1,$empNo2,$esp,$Fini,$Ffin,$dact,$titref,$sex,$ntel);
     include_once('conexionbdd.php');
-    $obj=new conexion('localhost','root','','provectus');
+    $obj=new conexion();
     $result=$obj->actualizaremp($empci,$empcorreo,$emppass,$empAp1,$empAp2,$empNo1,$empNo2,$esp,$Fini,$Ffin,$dact,$titref,$sex,$ntel);
     if($result)
     {

@@ -20,14 +20,14 @@
                 </div>
             </div>";
     include_once('conexionbdd.php');
-    $obj=new conexion('localhost','root','','provectus');
+    $obj=new conexion();
     $email=$_POST['email'];
     $password=$_POST['password'];
     $login=$obj->validaringresopaciente($email,$password);
     $linea=mysqli_fetch_array($login);
     if($linea==NULL)
     {
-        $obj=new conexion('localhost','root','','provectus');
+        $obj=new conexion();
         $login=$obj->validaringresoempleado($email,$password);
         $linea=mysqli_fetch_array($login);
         if($linea==NULL)
@@ -51,7 +51,7 @@
     else
     {
         $ci = $linea[2];
-        $obj=new conexion('localhost','root','','provectus');
+        $obj=new conexion();
         $estado=$obj->estado($ci);
         $estado=mysqli_fetch_array($estado);
         if($estado[0]==1)

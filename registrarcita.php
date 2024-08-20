@@ -29,7 +29,7 @@
     if($codesp==1)
     {
         include_once('conexionbdd.php');
-        $obj=new conexion('localhost','root','','provectus');
+        $obj=new conexion();
         if(isset($_POST['aceptar']))
         {
             
@@ -37,7 +37,7 @@
             if($aceptar)
             {
                 include_once('conexionbdd.php');
-                $obj=new conexion('localhost','root','','provectus');
+                $obj=new conexion();
                 $method=$obj->contratmto();
                 $cont=0;
                 while($result=mysqli_fetch_array($method))
@@ -100,7 +100,7 @@
         else if(isset($_POST['eliminar']))
         {
             include_once('conexionbdd.php');
-            $obj=new conexion('localhost','root','','provectus');
+            $obj=new conexion();
             $eliminar=$obj->eliminarcita($idcita);
             if($eliminar)
             {
@@ -119,7 +119,7 @@
     if($codesp==2)
     {
         include_once('conexionbdd.php');
-        $obj=new conexion('localhost','root','','provectus');
+        $obj=new conexion();
         if(isset($_POST['aceptar']))
         {
             
@@ -127,7 +127,7 @@
             if($aceptar)
             {
                 include_once('conexionbdd.php');
-                $obj=new conexion('localhost','root','','provectus');
+                $obj=new conexion();
                 $method=$obj->contratmto();
                 $cont=0;
                 while($result=mysqli_fetch_array($method))
@@ -189,7 +189,7 @@
         else if(isset($_POST['eliminar']))
         {
             include_once('conexionbdd.php');
-            $obj=new conexion('localhost','root','','provectus');
+            $obj=new conexion();
             $eliminar=$obj->eliminarcita($idcita);
             if($eliminar)
             {

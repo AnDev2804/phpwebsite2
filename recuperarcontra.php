@@ -26,7 +26,7 @@
         {
             $email=$_POST['email'];
             include_once('conexionbdd.php');
-            $obj=new conexion('localhost','root','','provectus');
+            $obj=new conexion();
             $result=$obj->buscaremail($email);
             $linea=mysqli_fetch_array($result);
             if($linea==null)

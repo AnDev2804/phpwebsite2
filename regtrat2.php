@@ -2,7 +2,7 @@
     $codigo=$_POST['codigo'];
     $nombre=$_POST['nombre'];
     include_once('conexionbdd.php');
-    $obj=new conexion('localhost','root','','provectus');
+    $obj=new conexion();
     $method=$obj->regtrat($codigo,$nombre);
     if($method)
     {

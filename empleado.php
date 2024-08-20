@@ -32,7 +32,7 @@
                     </div>
                 </div>";
                 include_once('conexionbdd.php');
-                $obj=new conexion('localhost','root','','provectus');
+                $obj=new conexion();
                 $cantcitas=$obj->cantcitas($codesp);
                 $citas=mysqli_fetch_array($cantcitas);
                 if($citas)
@@ -94,7 +94,7 @@
                                 </form>
                                 <script src='enfermero.js'></script>
                                 </div>";
-                                $obj=new conexion('localhost','root','','provectus');
+                                $obj=new conexion();
                                 $res=$obj->conemerg();
                                 $linea=mysqli_fetch_array($res);
                                 if($linea==null)
@@ -125,7 +125,7 @@
                                 <tr>";
                                 echo "<p class='fw-bold fs-4 text-white'>Siniestros activos<br>(Solo se mostraran 10)</p>
                                 <p id='elim'></p>";
-                                $obj=new conexion('localhost','root','','provectus');
+                                $obj=new conexion();
                                 $res=$obj->conemerg();
                                 while($linea=mysqli_fetch_array($res))
                                 {
@@ -217,7 +217,7 @@
                     </div>
                 </div>";
                 include_once('conexionbdd.php');
-                $obj=new conexion('localhost','root','','provectus');
+                $obj=new conexion();
                 $cantcitas=$obj->cantcitas($codesp);
                 $citas=mysqli_fetch_array($cantcitas);
                 if($citas)

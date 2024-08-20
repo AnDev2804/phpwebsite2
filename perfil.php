@@ -28,7 +28,7 @@
                 </div>
             </div>";
             include_once('conexionbdd.php');
-            $obj=new conexion('localhost','root','','provectus');
+            $obj=new conexion();
             $result=$obj->buscarpacreg($ci);
             $linea=mysqli_fetch_array($result);
             echo"<div class='bg-secondary-subtle p-5'>

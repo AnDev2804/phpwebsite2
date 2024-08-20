@@ -1,7 +1,7 @@
 <?php
     $ci=$_POST['ci'];
     include_once('conexionbdd.php');
-    $obj=new conexion('localhost','root','','provectus');
+    $obj=new conexion();
     $result=$obj->buscarcitas($ci);
     //HTML-----------------------------------------------------------
     echo "<!DOCTYPE html>
@@ -45,7 +45,7 @@
                 <th scope='col'>Costo</th>
             </tr>
             </thead>";
-        $obj=new conexion('localhost','root','','provectus');
+        $obj=new conexion();
         $result=$obj->buscarcitas($ci);
         while($lineas=mysqli_fetch_array($result))
         {

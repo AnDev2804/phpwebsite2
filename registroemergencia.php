@@ -1,6 +1,6 @@
 <?php
     include_once('conexionbdd.php');
-    $obj=new conexion('localhost','root','','provectus');
+    $obj=new conexion();
     $desc=$_POST['desc'];
     if($desc!=NULL)
     {
@@ -9,7 +9,7 @@
         {
             $id=1;
             include_once('conexionbdd.php');
-            $obj=new conexion('localhost','root','','provectus');
+            $obj=new conexion();
             $regemer=$obj->regemergencia($id,$desc);
             if($regemer)
             {
@@ -23,7 +23,7 @@
         else
         {
             include_once('conexionbdd.php');
-            $obj=new conexion('localhost','root','','provectus');
+            $obj=new conexion();
             $gett=$obj->numemergencia();
             while($getid=mysqli_fetch_array($gett))
             {
@@ -31,7 +31,7 @@
             }
             $id++;
             include_once('conexionbdd.php');
-            $obj=new conexion('localhost','root','','provectus');
+            $obj=new conexion();
             $regemer=$obj->regemergencia($id,$desc);
             if($regemer)
             {

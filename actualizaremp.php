@@ -11,7 +11,7 @@
         </head>";
     $ci=$_POST['ci'];
     include_once('conexionbdd.php');
-    $obj=new conexion('localhost','root','','provectus');
+    $obj=new conexion();
     $res=$obj->buscaremp($ci);
     $linea=mysqli_fetch_array($res);
     if($linea==null)

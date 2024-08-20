@@ -16,7 +16,7 @@
     if($empcorreo!=NULL&&$emppass!=NULL&&$empci!=NULL&&$empNo1!=NULL&&$empAp1!=NULL&&$esp!=NULL&&$Fini!=NULL&&$Ffin!=NULL&&$dact!=NULL&&$titref!=NULL&&$sex!=NULL&&$ntel)
     {
         include_once('conexionbdd.php');
-        $obj=new conexion('localhost','root','','provectus');
+        $obj=new conexion();
         $res=$obj->regemp($empci,$empcorreo,$emppass,$empAp1,$empAp2,$empNo1,$empNo2,$esp,$Fini,$Ffin,$dact,$titref,$sex,$ntel);
         if($res)
         {

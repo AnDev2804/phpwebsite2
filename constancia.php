@@ -4,12 +4,12 @@
     $fechaactual=$_POST['factual'];
     include_once('conexionbdd.php');
     $codesp=$_POST['codesp'];
-    $obj=new conexion('localhost','root','','provectus');
+    $obj=new conexion();
     $res=$obj->constancia($fechaactual,$codesp,$ci);
     $null=mysqli_fetch_array($res);
     if($null==null)
     {
-        $obj=new conexion('localhost','root','','provectus');
+        $obj=new conexion();
         $res=$obj->constancia2($codesp,$ci);
         $null=mysqli_fetch_array($res);
         if($null==null)
@@ -48,7 +48,7 @@
             </body>
             </html>";
         }
-        $obj=new conexion('localhost','root','','provectus');
+        $obj=new conexion();
         $res=$obj->constancia2($codesp,$ci);
         while($linea=mysqli_fetch_array($res))
         {
@@ -142,7 +142,7 @@
     }
     else
     {
-        $obj=new conexion('localhost','root','','provectus');
+        $obj=new conexion();
         $res=$obj->constancia($fechaactual,$codesp,$ci);
         while($linea=mysqli_fetch_array($res))
         {

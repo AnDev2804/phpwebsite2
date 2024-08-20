@@ -4,7 +4,7 @@
     $fcita=$_POST['fcita'];
     $espec=$_POST['espec'];
     include_once('conexionbdd.php');
-    $obj=new conexion('localhost','root','','provectus');
+    $obj=new conexion();
     $res=$obj->numcita();
     while($num=mysqli_fetch_array($res))
     {
@@ -18,7 +18,7 @@
     else
     {
         include_once('conexionbdd.php');
-        $obj=new conexion('localhost','root','','provectus');
+        $obj=new conexion();
         $cita=$obj->citapendiente($numero,$ci,$fcita,$espec);
         if($cita)
         {

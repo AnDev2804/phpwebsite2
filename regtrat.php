@@ -1,6 +1,6 @@
 <?php
     include_once('conexionbdd.php');
-    $obj=new conexion('localhost','root','','provectus');
+    $obj=new conexion();
     $method=$obj->contratmto();
     while($result=mysqli_fetch_array($method))
     {

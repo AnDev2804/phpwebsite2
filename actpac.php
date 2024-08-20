@@ -5,12 +5,12 @@
     $fmot=$_POST['fmot'];$est=$_POST['est'];$peso=$_POST['peso'];
     //var_dump($cior,$ci,$email,$ap1,$ap2,$no1,$no2,$fnac,$ntel,$sex,$tsangre,$fsangre,$falerg,$fcong,$fmot,$est,$peso);
     include_once('conexionbdd.php');
-    $obj=new conexion('localhost','root','','provectus');
+    $obj=new conexion();
     $res=$obj->actpac($cior,$ci,$email,$ap1,$ap2,$no1,$no2,$fnac,$ntel,$sex);
     //var_dump($res);
     if($res)
     {
-        $obj=new conexion('localhost','root','','provectus');
+        $obj=new conexion();
         $res=$obj->actperf($cior,$ci,$tsangre,$fsangre,$falerg,$fcong,$fmot,(float)$est,(float)$peso);
         //var_dump($res);
         if($res)

@@ -1,7 +1,7 @@
 <?php
     $ci=$_POST['ci'];
     include_once('conexionbdd.php');
-    $obj=new conexion('localhost','root','','provectus');
+    $obj=new conexion();
     $result=$obj->eliminaremp($ci);
     if($result)
     {

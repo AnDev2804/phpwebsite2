@@ -27,7 +27,7 @@
                             <div class='bg-secondary bg-gradient rounded-5 p-5' style='--bs-bg-opacity: .7;'>
                                 <p class='fw-bold fs-3 text-white'>Citas Pendientes</p>";
                 include_once('conexionbdd.php');
-                $obj=new conexion('localhost','root','','provectus');
+                $obj=new conexion();
                 $citas=$obj->citaspend($codesp);
                 $null=mysqli_fetch_array($citas);
                 if($null==null)
@@ -36,7 +36,7 @@
                 }
                 else
                 {
-                    $obj=new conexion('localhost','root','','provectus');
+                    $obj=new conexion();
                     $citas=$obj->citaspend($codesp);
                     while($info=mysqli_fetch_array($citas))
                     {
@@ -86,7 +86,7 @@
                             <div class='bg-secondary bg-gradient rounded-5 p-5' style='--bs-bg-opacity: .7;'>
                                 <p class='fw-bold fs-3 text-white'>Citas Pendientes</p>";
                 include_once('conexionbdd.php');
-                $obj=new conexion('localhost','root','','provectus');
+                $obj=new conexion();
                 $citas=$obj->citaspend($codesp);
                 $null=mysqli_fetch_array($citas);
                 if($null==null)
@@ -95,7 +95,7 @@
                 }
                 else
                 {
-                    $obj=new conexion('localhost','root','','provectus');
+                    $obj=new conexion();
                     $citas=$obj->citaspend($codesp);
                     while($info=mysqli_fetch_array($citas))
                     {

@@ -29,7 +29,7 @@
         {
             $password=$_POST['password'];
             include_once('conexionbdd.php');
-            $obj=new conexion('localhost','root','','provectus');
+            $obj=new conexion();
             $res=$obj->actcon($email2,$password);
             if($res)
             {

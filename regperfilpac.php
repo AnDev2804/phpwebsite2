@@ -23,11 +23,11 @@
         </div>
     </div>";
     include_once('conexionbdd.php');
-    $obj=new conexion('localhost','root','','provectus');
+    $obj=new conexion();
     $registro=$obj->regperfil($ci,$tsangre,$fsangre,$est,$pes,$faler,$fcon,$fmot);
     if($registro)
     {
-        $obj= new conexion('localhost','root','','provectus');
+        $obj= new conexion();
         $update=$obj->updateestado($ci);
         if($update)
         {

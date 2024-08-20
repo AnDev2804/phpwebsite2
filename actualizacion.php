@@ -1,6 +1,6 @@
 <?php
     include_once('conexionbdd.php');
-    $obj=new conexion('localhost','root','','provectus');
+    $obj=new conexion();
     $ci=$_POST['ci'];
     $email=$_POST['email'];
     $ape1=$_POST['ape1'];

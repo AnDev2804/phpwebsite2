@@ -2,7 +2,7 @@
     error_reporting(0);
     $ci=$_POST['ci'];
     include_once('conexionbdd.php');
-    $obj=new conexion('localhost','root','','provectus');
+    $obj=new conexion();
     $result=$obj->buscarpac($ci);
     $linea=mysqli_fetch_array($result);
     //HTML-----------------------------------------------------------

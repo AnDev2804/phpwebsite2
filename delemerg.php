@@ -2,7 +2,7 @@
     error_reporting(0);
     $id=(int)$_POST['id'];
     include_once('conexionbdd.php');
-    $obj=new conexion('localhost','root','','provectus');
+    $obj=new conexion();
     $res=$obj->elimemerg($id);
     if($res)
     {
