@@ -110,3 +110,9 @@ This project represents my second major step in university towards more advanced
 Thank you for visiting this repository! ⭐ If you liked it, don't forget to give it a star.
 
 ---
+
+### ⚠ Advise
+There's one file that doesn't have included the "conexion" class, instead it has the "mysqli" class, be sure to change the name of your database there.
+The file is "registropaciente.php"
+
+---
