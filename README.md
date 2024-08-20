@@ -111,8 +111,8 @@ Thank you for visiting this repository! ⭐ If you liked it, don't forget to giv
 
 ---
 
-### ⚠ Advise
-There's one file that doesn't have included the "conexion" class, instead it has the "mysqli" class, be sure to change the name of your database there.
-The file is "registropaciente.php"
+### ⚠ Warning
+There is a file that does not have the “conexion” class included, instead it has the “mysqli” class, make sure you rename your database there.
+The file is “registropaciente.php”.
 
 ---
